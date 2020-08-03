@@ -6,6 +6,11 @@
 2. Change directory to the root directory of the project and build the image using `docker build -t django-app .` command. 
 3. Run the Django app using `docker container run --name web-app --network=host django-app` command.
 
+### POST APIs:
+
+1. http://127.0.0.1:8000/api/finite_values_entity
+2. http://127.0.0.1:8000/api/numeric_entity
+
 ### Docker image size = 119 MB
 
 ### Assumptions:
