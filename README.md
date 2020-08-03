@@ -18,7 +18,6 @@
     |------------------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
     | false            | false      | Output is always (False, False, "", {})                                                                                                              |
     | false            | true       | `ids_stated` in params must be a string instead of a list.                                                                                             |
-    | true             | false      | `ids_stated` must be a list of supported IDs passed in the values list.                                                                                |
+    | true             | false      | `ids_stated` must be a list of supported IDs passed in the values list. If all the values are invalid, params = {} (Concluded from 1st POST API examples)                                                                             |
     | true             | true       | `ids_stated` in params must be a string instead of a list. `pick_first` is given priority over `support_multiple`. (Concluded from 2nd POST API examples)  |
-
 
