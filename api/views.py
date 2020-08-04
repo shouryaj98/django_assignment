@@ -18,7 +18,7 @@ def finite_values_entity(request):
                 "trigger": validation_result[2],
                 "parameters": validation_result[3]
             })
-        except (TypeError, KeyError):
+        except Exception:
             return HttpResponseBadRequest("JSON format is invalid.")
     return HttpResponse("Send a POST request with the required JSON payload.")
 
@@ -34,6 +34,6 @@ def numeric_entity(request):
                 "trigger": validation_result[2],
                 "parameters": validation_result[3]
             })
-        except (TypeError, KeyError):
+        except Exception:
             return HttpResponseBadRequest("JSON format is invalid.")
     return HttpResponse("Send a POST request with the required JSON payload.")
